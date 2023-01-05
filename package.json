@@ -1,0 +1,21 @@
+{
+  "name": "seleniumnodedemo",
+  "version": "1.0.0",
+  "description": "Interview",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js features --require features --require step_definitions --format json:results/chrome.json ; npm run testReport",
+    "testReport": "node ./utils/generateReport"  },
+  "author": "Samay Thakkar",
+  "dependencies": {
+    "selenium-webdriver": "4.7.1",
+    "chai": "4.3.7",
+    "cucumber": "6.0.7",
+    "webdriver-manager": "12.1.8",
+    "chromedriver":"108.0.0",
+    "cucumber-html-reporter":"5.5.0"
+  },
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs"
+    }
+}
